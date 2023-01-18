@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styles from './style.module.css'
+
 const Buttons = (props) => {
     const {
         onClick,

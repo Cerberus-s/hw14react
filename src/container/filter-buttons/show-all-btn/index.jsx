@@ -3,6 +3,7 @@ import {useDispatch} from "react-redux";
 import {filterTodoActionCreator} from "../../../redux/filter/actions";
 import {TYPE_OF_FILTER} from "../../../redux/filter/reducers";
 import styles from './style.module.css'
+
 const AllButton = () => {
     const dispatch = useDispatch()
     return (

@@ -24,9 +24,12 @@ const AddTodoContainer = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
     }
+
     return (
-        <form className={styles.input_parent}
-        onSubmit={handleSubmit}>
+        <form 
+            className={styles.input_parent}
+            onSubmit={handleSubmit}
+        >
             <Input
             value = {inputValue}
             onChange = {handleInputChange}

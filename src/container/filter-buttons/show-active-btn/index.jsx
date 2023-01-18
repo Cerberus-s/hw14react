@@ -6,6 +6,7 @@ import styles from './style.module.css'
 
 const ActiveButton = () => {
     const dispatch = useDispatch()
+    
     return (
         <div>
             <button className={styles.button_active} onClick={() => dispatch(filterTodoActionCreator(TYPE_OF_FILTER.SHOW_ACTIVE))}>
