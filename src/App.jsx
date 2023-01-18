@@ -18,7 +18,7 @@ function App() {
     // console.log(posts)
 
     return (
-        <div className='main_block'>
+        <div className="main_block">
             <div>
                 <AddTodoContainer/>
             </div>
