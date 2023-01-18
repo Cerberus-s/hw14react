@@ -8,6 +8,7 @@ const Input = (props) => {
         onChange,
         type = 'text'
     } = props
+    
     return (
         <div>
                 <TextField

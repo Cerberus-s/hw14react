@@ -14,8 +14,8 @@ import styles from './style.module.css'
 const TodoListContainer = () => {
     const todos = useSelector(getTodos)
     const activeFilter = useSelector(getActiveFilter)
-
     const dispatch = useDispatch()
+
     if (!todos.length) {
         return (
             <p>No todos. Please add new todo</p>
@@ -42,6 +42,7 @@ const TodoListContainer = () => {
                 return todos
         }
     }
+    
     return (
         <div className={styles['parent_list']}>
             <List
