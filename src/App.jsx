@@ -5,6 +5,7 @@ import TodoListContainer from "./container/todo-list";
 import FilterButton from "./container/filter-buttons";
 import {useDispatch, useSelector} from "react-redux";
 import postOperations from './redux/post/thunk'
+import FormLS from './components/form';
 
 function App() {
     const posts = useSelector(state=> state.posts.list)
@@ -14,11 +15,10 @@ function App() {
     const deleteStatus = useSelector(state => state.posts)
     const dispatch = useDispatch()
     const {fetchPosts, fetchPostById, updatePostById, createPost, deletePostById} = postOperations
-    // const {fetchPosts} = postOperations
     
-    // useEffect(() => {
-    //     dispatch(postOperations.fetchPosts())
-    // }, [])
+    useEffect(() => {
+        dispatch(postOperations.fetchPosts())
+    }, [])
     
     // console.log(posts)
 
@@ -27,7 +27,11 @@ function App() {
             <AddTodoContainer/>
             <FilterButton/>
             <TodoListContainer/>
+            <div>
+                <FormLS/>
+            </div>
         </div>
+        
     );
 }
 
