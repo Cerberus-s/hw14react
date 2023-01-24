@@ -19,15 +19,9 @@ function App() {
 
     return (
         <div className="main_block">
-            <div>
-                <AddTodoContainer/>
-            </div>
-            <div>
-                <FilterButton/>
-            </div>
-            <div>
-                <TodoListContainer/>
-            </div>
+            <AddTodoContainer/>
+            <FilterButton/>
+            <TodoListContainer/>
         </div>
     );
 }
