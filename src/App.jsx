@@ -22,9 +22,9 @@ function App() {
             <div>
                 <AddTodoContainer/>
             </div>
-            <>
+            <div>
                 <FilterButton/>
-            </>
+            </div>
             <div>
                 <TodoListContainer/>
             </div>
